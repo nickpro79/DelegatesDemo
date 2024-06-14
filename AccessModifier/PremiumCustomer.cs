@@ -19,6 +19,8 @@ namespace AccessModifier
             //Console.WriteLine(this.Id);
             Console.WriteLine($"Customer Name: {this.Name}");
 
+            //this.PhoneNumber = "92222222";
+            
             Customer c = new Customer("1", "A");
         }
     }

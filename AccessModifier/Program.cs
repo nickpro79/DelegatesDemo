@@ -9,6 +9,9 @@ namespace AccessModifier
 
         internal float Salary { get; set; }
 
+        //protected internal string PhoneNumber { get; set; }
+        //private protected string Address { get; set; }
+
         public Customer(string id,string name)
         {
             this.Id = id;
@@ -26,6 +29,8 @@ namespace AccessModifier
            // Console.WriteLine(this.Name);
             //Console.WriteLine(this.Salary);
         }
+
+
     }
 
     internal class Program
@@ -36,6 +41,7 @@ namespace AccessModifier
             // Console.WriteLine(customer.Id); // This line would cause a compilation error because Id is private
             customer.Salary = 5000;
             customer.DisplayId();
+            //customer.PhoneNumber = "92222222";
             
             //Console.WriteLine(customer.name);This line would cause a compilation error because Name is protocted
         }
